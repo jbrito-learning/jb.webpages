@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <title>Nome Apelido | Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio de Nome Apelido" />
+    <meta name="keywords" content="Nome, Apelido, Portfolio" />
+    <meta name="author" content="Nome Apelido" />
+    <link rel="icon" href="./favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <a href="/">Nome Apelido</a>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#educacao">Educação</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Portfolio de Nome Apelido</h1>
+      <img src="./avatar.png" alt="Avatar de Nome Apelido" />
+      <section id="sobre">
+        <h2>Sobre</h2>
+        <p>Descrição sobre mim.</p>
+      </section>
+
+      <section id="video">
+        <h2>Vídeo de Apresentação</h2>
+        <video width="100%" controls style="max-width: 40%" loop>
+          <source src="./video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <section id="ifram">
+        <h2>Vídeo de Candidatura</h2>
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/-MPvsxsH5c8"
+          title="YouTube video player"
+          frameborder="0"
+          style="max-width: 40%"
+          allowfullscreen
+        >
+        </iframe>
+      </section>
+
+      <section id="educacao">
+        <h2>Educação</h2>
+        <ul>
+          <li>Curso 1</li>
+          <li>Curso 2</li>
+          <li>Curso 3</li>
+        </ul>
+      </section>
+      <section id="experiencia">
+        <h2>Experiência</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Empresa</th>
+              <th>Localização</th>
+              <th>Duração</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Empresa 1</td>
+              <td>Localização 1</td>
+              <td>Duração 1</td>
+            </tr>
+            <tr>
+              <td>Empresa 2</td>
+              <td>Localização 2</td>
+              <td>Duração 2</td>
+            </tr>
+            <tr>
+              <td>Empresa 3</td>
+              <td>Localização 3</td>
+              <td>Duração 3</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="/submit" method="POST">
+          <!-- Text inputs -->
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Seu nome completo"
+              required
+            />
+          </div>
+
+          <!-- Email input -->
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="seu.email@exemplo.com"
+              required
+            />
+          </div>
+
+          <!-- Tel input -->
+          <div class="form-group">
+            <label for="telefone">Telefone:</label>
+            <input
+              type="tel"
+              id="telefone"
+              name="telefone"
+              pattern="[0-9]{9}"
+              placeholder="912345678"
+            />
+          </div>
+
+          <!-- Date input -->
+          <div class="form-group">
+            <label for="data">Data preferida para contacto:</label>
+            <input type="date" id="data" name="data" />
+          </div>
+
+          <!-- Select dropdown -->
+          <div class="form-group">
+            <label for="assunto">Assunto:</label>
+            <select id="assunto" name="assunto" required>
+              <option value="">Selecione uma opção</option>
+              <option value="projeto">Proposta de Projeto</option>
+              <option value="trabalho">Oportunidade de Trabalho</option>
+              <option value="outro">Outro Assunto</option>
+            </select>
+          </div>
+
+          <!-- Radio buttons -->
+          <div class="form-group">
+            <p>Método de contacto preferido:</p>
+            <input
+              type="radio"
+              id="prefEmail"
+              name="contactoPref"
+              value="email"
+            />
+            <label for="prefEmail">Email</label>
+            <input
+              type="radio"
+              id="prefTel"
+              name="contactoPref"
+              value="telefone"
+            />
+            <label for="prefTel">Telefone</label>
+          </div>
+
+          <!-- Checkboxes -->
+          <div class="form-group">
+            <p>Horário disponível:</p>
+            <input type="checkbox" id="manha" name="horario" value="manha" />
+            <label for="manha">Manhã</label>
+            <input type="checkbox" id="tarde" name="horario" value="tarde" />
+            <label for="tarde">Tarde</label>
+            <input type="checkbox" id="noite" name="horario" value="noite" />
+            <label for="noite">Noite</label>
+          </div>
+
+          <!-- Range input -->
+          <div class="form-group">
+            <label for="urgencia">Nível de Urgência:</label>
+            <input type="range" id="urgencia" name="urgencia" min="1" max="5" />
+          </div>
+
+          <!-- File upload -->
+          <div class="form-group">
+            <label for="documento">Anexar Documento:</label>
+            <input
+              type="file"
+              id="documento"
+              name="documento"
+              accept=".pdf,.doc,.docx"
+            />
+          </div>
+
+          <!-- Color picker -->
+          <div class="form-group">
+            <label for="cor">Cor favorita:</label>
+            <input type="color" id="cor" name="cor" />
+          </div>
+
+          <!-- Textarea -->
+          <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="4"
+              placeholder="Escreva sua mensagem aqui..."
+              required
+            ></textarea>
+          </div>
+
+          <!-- Form buttons -->
+          <div class="form-buttons">
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>© 2025 Nome Apelido</p>
+      <div id="quick-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#educacao">Educação</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <p>Email: jbritodev@gmail.com</p>
+    </footer>
+  </body>
+</html>
