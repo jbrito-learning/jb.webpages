@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <title>Nome Apelido | Contacto</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contacto de Nome Apelido" />
+    <meta name="keywords" content="Nome, Apelido, Contacto" />
+    <meta name="author" content="Nome Apelido" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/global.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <a class="home-button" href="index.html">
+            <img src="images/logo-small.svg" alt="Logotipo" />
+          </a>
+          <nav>
+            <a href="sobre.html">Sobre</a>
+            <a href="educacao.html">Educação</a>
+            <a href="experiencia.html">Experiência</a>
+            <a href="contacto.html">Contacto</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <div class="banner">
+        <h1>Contacto</h1>
+      </div>
+      <section id="contacto">
+        <ul>
+          <li>
+            <p><b>Email</b></p>
+            <a href="mailto:nome.apelido@gmail.com">nome.apelido@gmail.com</a>
+          </li>
+          <li>
+            <p><b>Telemóvel</b></p>
+            <a href="tel:+351912345678">+351 912 345 678</a>
+          </li>
+        </ul>
+        <h2>Formulário de Contacto</h2>
+        <form action="/submit" method="POST">
+          <!-- Text inputs -->
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Seu nome completo"
+              required
+            />
+          </div>
+
+          <!-- Email input -->
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="seu.email@exemplo.com"
+              required
+            />
+          </div>
+
+          <!-- Tel input -->
+          <div class="form-group">
+            <label for="telefone">Telefone:</label>
+            <input
+              type="tel"
+              id="telefone"
+              name="telefone"
+              pattern="[0-9]{9}"
+              placeholder="912345678"
+            />
+          </div>
+
+          <!-- Select dropdown -->
+          <div class="form-group">
+            <label for="assunto">Assunto:</label>
+            <select id="assunto" name="assunto" required>
+              <option value="">Selecione uma opção</option>
+              <option value="projeto">Proposta de Projeto</option>
+              <option value="trabalho">Oportunidade de Trabalho</option>
+              <option value="outro">Outro Assunto</option>
+            </select>
+          </div>
+
+          <!-- Radio buttons -->
+          <div class="form-group">
+            <p>Método de contacto preferido:</p>
+            <input
+              type="radio"
+              id="prefEmail"
+              name="contactoPref"
+              value="email"
+            />
+            <label for="prefEmail">Email</label>
+            <input
+              type="radio"
+              id="prefTel"
+              name="contactoPref"
+              value="telefone"
+            />
+            <label for="prefTel">Telefone</label>
+          </div>
+
+          <!-- File upload -->
+          <div class="form-group">
+            <label for="documento">Anexar Documento:</label>
+            <input
+              type="file"
+              id="documento"
+              name="documento"
+              accept=".pdf,.doc,.docx"
+            />
+          </div>
+
+          <!-- Textarea -->
+          <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="4"
+              placeholder="Escreva sua mensagem aqui..."
+              required
+            ></textarea>
+          </div>
+
+          <!-- Form buttons -->
+          <div class="form-buttons">
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="quick-links">
+          <a href="index.html">Home</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#educacao">Educação</a>
+          <a href="#experiencia">Experiência</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+        <div class="footer-info">
+          <div>© 2025 Nome Apelido</div>
+          <div>
+            <a href="mailto:jbritodev@gmail.com">jbritodev@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
